@@ -15,4 +15,4 @@ def lcs (X, Y):
     return D[m][n]
 
 
-print (lcs(X = "NIKHILAHLAWAT", Y = "HIMANIDIMRI"))
+print (lcs(X = "NIKHILAHLAWAT", Y = "OPTIMUSPRIME"))
