@@ -1,0 +1,118 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch BinarySearch",
+            "request": "launch",
+            "mainClass": "BinarySearch",
+            "projectName": "java_2bbbc546"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ceiling_Floor_Number",
+            "request": "launch",
+            "mainClass": "Ceiling_Floor_Number",
+            "projectName": "java_2bbbc546"
+        },
+        {
+            "type": "java",
+            "name": "Launch FirstandLastPosition",
+            "request": "launch",
+            "mainClass": "FirstandLastPosition",
+            "projectName": "java_2bbbc546"
+        },
+        {
+            "type": "java",
+            "name": "Launch LC_50_Pow",
+            "request": "launch",
+            "mainClass": "LC_50_Pow",
+            "projectName": "java_2bbbc546"
+        },
+        {
+            "type": "java",
+            "name": "Launch LC_53_Max_Subarray",
+            "request": "launch",
+            "mainClass": "LC_53_Max_Subarray",
+            "projectName": "java_2bbbc546"
+        },
+        {
+            "type": "java",
+            "name": "Launch LC_54_Spiral_Matrix",
+            "request": "launch",
+            "mainClass": "LC_54_Spiral_Matrix",
+            "projectName": "java_2bbbc546"
+        },
+        {
+            "type": "java",
+            "name": "Launch LC_69_Sqrt",
+            "request": "launch",
+            "mainClass": "LC_69_Sqrt",
+            "projectName": "java_2bbbc546"
+        },
+        {
+            "type": "java",
+            "name": "Launch LongestCommonSubsequence",
+            "request": "launch",
+            "mainClass": "LongestCommonSubsequence",
+            "projectName": "java_2bbbc546"
+        },
+        {
+            "type": "java",
+            "name": "Launch LongestIncreasingSequence",
+            "request": "launch",
+            "mainClass": "LongestIncreasingSequence",
+            "projectName": "java_2bbbc546"
+        },
+        {
+            "type": "java",
+            "name": "Launch Pattern",
+            "request": "launch",
+            "mainClass": "Pattern",
+            "projectName": "java_2bbbc546"
+        },
+        {
+            "type": "java",
+            "name": "Launch Smallest_Character",
+            "request": "launch",
+            "mainClass": "Smallest_Character",
+            "projectName": "java_2bbbc546"
+        },
+        {
+            "type": "java",
+            "name": "Launch Test",
+            "request": "launch",
+            "mainClass": "Test",
+            "projectName": "java_2bbbc546"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestPriorityQueue",
+            "request": "launch",
+            "mainClass": "TestPriorityQueue",
+            "projectName": "java_2bbbc546"
+        },
+        {
+            "type": "java",
+            "name": "Launch Solution",
+            "request": "launch",
+            "mainClass": "practice.Solution"
+        },
+        {
+            "type": "java",
+            "name": "Launch Solution(1)",
+            "request": "launch",
+            "mainClass": "practice.maximum_product_pair.Solution"
+        }
+    ]
+}

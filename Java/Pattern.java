@@ -1,7 +1,5 @@
-package Java;
-
 public class Pattern {
-
+    
     //Right Angle Triangle
     public void pattern1(int n){
         for (int i = 1; i<= n; i++){
@@ -38,7 +36,7 @@ public class Pattern {
     // Inverted 180 Degree Rotated Right Angle riangle
     public void pattern4(int n){
         for (int i = 1; i<= n; i++){
-            for (int k = 0; k<= i; k++){
+            for (int k = 1; k<i; k++){
                 System.out.print(" ");
             }
             for (int j=i; j<=n; j++){
@@ -198,7 +196,7 @@ public class Pattern {
     public void pattern13(int n){                                 //                 1
         for (int i=1; i<=n; i++){                                 //                212
             for(int k = 1; k<=n-i; k++){                          //               32123
-                System.out.print(" ");                            //              4321123
+                System.out.print(" ");                            //              4321234
             }                                                     //             543212345
             for (int j = i; j>1; j--){
                 System.out.print(j);
@@ -256,13 +254,78 @@ public class Pattern {
         System.out.println();
     }
 }
-    
-    
-    
+
+    // Hollow Rectangle or Square shape
+    public void pattern16(int n){
+        for (int i = 1; i<=n; i++){
+            for (int j = 1; j<=n*2; j++){
+                if (i == 1 || i == n || j==1 || j==n*2) {
+                System.out.print("*");
+                } else {
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
+    }
+
+    public void pattern17(int n){
+    /**    
+    5 5 5 5 5 5 5 5 5 
+    5 4 4 4 4 4 4 4 5
+    5 4 3 3 3 3 3 4 5
+    5 4 3 2 2 2 3 4 5
+    5 4 3 2 1 2 3 4 5
+    5 4 3 2 2 2 3 4 5 
+    5 4 3 3 3 3 3 4 5
+    5 4 4 4 4 4 4 4 5
+    5 5 5 5 5 5 5 5 5
+    */
+   
+    int s=2*n-1;
+	//Upper half
+	for(int i=0;i<(s/2)+1;i++){
+		int m=n;
+		//Decreasing part
+		for(int j=0;j<i;j++){
+			System.out.printf("%d ",m);
+			m--;
+		}
+		//Constant part
+		for(int k=0;k<s-2*i;k++){
+			System.out.printf("%d ",n-i);
+		}
+		//Increasing part
+		m=n-i+1;
+		for(int l=0;l<i;l++){
+			System.out.printf("%d ",m);
+			m++;
+		}
+		System.out.println();
+	}
+	//Lower half
+	for(int i=s/2-1;i>=0;i--){
+		//Decreasing part
+		int m=n;
+		for(int j=0;j<i;j++){
+			System.out.printf("%d ",m);
+			m--;
+		}
+		for(int k=0;k<s-2*i;k++){
+			System.out.printf("%d ",n-i);
+		}
+		m=n-i+1;
+		for(int l=0;l<i;l++){
+			System.out.printf("%d ",m);
+			m++;
+		}
+		System.out.println();
+	}	    
+    }
 
     public static void main(String arga[]){
         Pattern p = new Pattern();
-
-        p.pattern15(5);
+        p.pattern17(5);
     }
 }
+
