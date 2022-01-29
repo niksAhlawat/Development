@@ -1,4 +1,5 @@
 package searching;
+
 public class BinarySearch {
     public static void main(String[] args) {
         int []ascArr = {2, 5, 9, 18, 22, 39, 48, 67, 89, 99};
