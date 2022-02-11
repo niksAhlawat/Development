@@ -28,12 +28,13 @@ public class Main {
 
     public static void main (String[] args) {
         ArrayList<Integer> arrayList = new ArrayList<Integer>();
-        Scanner in = new Scanner(System.in);
-        while(in.hasNextInt()) {
-            int num = in.nextInt();
-            if (num < 0) 
-                break;
-            arrayList.add(Integer.valueOf(num));
+        try (Scanner in = new Scanner(System.in)) {
+            while(in.hasNextInt()) {
+                int num = in.nextInt();
+                if (num < 0) 
+                    break;
+                arrayList.add(Integer.valueOf(num));
+            }
         }
         int new_length = processArray(arrayList);
         for(int i=0; i<new_length; i++)
