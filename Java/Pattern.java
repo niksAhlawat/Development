@@ -343,9 +343,20 @@ public class Pattern {
     }
 
 
+
+    public void pattern19(int n){
+        for (int i =1; i<=n; i++){
+            for (int j =1; j<=i; j++){
+                System.out.print(j + " ");
+            }
+        
+            System.out.println();
+        }
+    }
+
     public static void main(String arga[]){
         Pattern p = new Pattern();
-        p.pattern11(5);
+        p.pattern19(5);
     }
 }
 
